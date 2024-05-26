@@ -1,4 +1,3 @@
-// SPDX-License-Identifier: Apache-2.0
 pragma solidity >0.5.0 <0.7.0;
 pragma experimental ABIEncoderV2;
 
@@ -83,9 +82,9 @@ library IexecODBLibOrders
 	function hash(EIP712Domain memory _domain)
 	public pure returns (bytes32 domainhash)
 	{
-		//
-		// Readeable but expensive
-		//
+		/**
+		 * Readeable but expensive
+		 */
 		// return keccak256(abi.encode(
 		// 	EIP712DOMAIN_TYPEHASH
 		// , keccak256(bytes(_domain.name))
@@ -118,9 +117,9 @@ library IexecODBLibOrders
 	function hash(AppOrder memory _apporder)
 	public pure returns (bytes32 apphash)
 	{
-		//
-		// Readeable but expensive
-		//
+		/**
+		 * Readeable but expensive
+		 */
 		// return keccak256(abi.encode(
 		// 	APPORDER_TYPEHASH
 		// , _apporder.app
@@ -149,9 +148,9 @@ library IexecODBLibOrders
 	function hash(DatasetOrder memory _datasetorder)
 	public pure returns (bytes32 datasethash)
 	{
-		//
-		// Readeable but expensive
-		//
+		/**
+		 * Readeable but expensive
+		 */
 		// return keccak256(abi.encode(
 		// 	DATASETORDER_TYPEHASH
 		// , _datasetorder.dataset
@@ -180,9 +179,9 @@ library IexecODBLibOrders
 	function hash(WorkerpoolOrder memory _workerpoolorder)
 	public pure returns (bytes32 workerpoolhash)
 	{
-		//
-		// Readeable but expensive
-		//
+		/**
+		 * Readeable but expensive
+		 */
 		// return keccak256(abi.encode(
 		// 	WORKERPOOLORDER_TYPEHASH
 		// , _workerpoolorder.workerpool
@@ -213,9 +212,9 @@ library IexecODBLibOrders
 	function hash(RequestOrder memory _requestorder)
 	public pure returns (bytes32 requesthash)
 	{
-		//
-		// Readeable but expensive
-		//
+		/**
+		 * Readeable but expensive
+		 */
 		//return keccak256(abi.encodePacked(
 		//	abi.encode(
 		//		REQUESTORDER_TYPEHASH
