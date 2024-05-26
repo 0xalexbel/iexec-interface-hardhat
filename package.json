@@ -1,25 +1,33 @@
 {
-  "name": "@iexec/interface",
-  "version": "3.0.35-8",
-  "description": "Contract abstraction, interface to iexec-poco",
-  "author": "iExec",
-  "license": "ISC",
-  "homepage": "https://github.com/iExecBlockchainComputing/PoCo-interface.git#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/iExecBlockchainComputing/PoCo-interface.git"
-  },
-  "bugs": {
-    "url": "https://github.com/iExecBlockchainComputing/PoCo-interface.git/issues"
-  },
-  "files": [
-    "/contracts",
-    "/build"
-  ],
-  "scripts": {
-    "build": "truffle compile"
-  },
-  "devDependencies": {
-    "truffle": "^5.1.10"
-  }
+    "name": "@iexec/interface",
+    "version": "3.0.35-8",
+    "description": "",
+    "engines": {
+        "node": ">=20"
+    },
+    "scripts": {
+        "compile": "hardhat compile",
+        "build": "hardhat compile",
+        "clean": "hardhat clean",
+        "test": "hardhat test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/0xalexbel/iexec-interface-hardhat.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "Apache-2.0",
+    "homepage": "https://github.com/0xalexbel/iexec-interface-hardhat.git#readme",
+    "devDependencies": {
+        "@nomicfoundation/hardhat-chai-matchers": "^2.0.6",
+        "@nomicfoundation/hardhat-ethers": "^3.0.6",
+        "@nomicfoundation/hardhat-foundry": "^1.1.2",
+        "@nomicfoundation/hardhat-network-helpers": "^1.0.10",
+        "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+        "chai": "^4.4.1",
+        "hardhat": "^2.22.4",
+        "web3-eth-contract": "^4.5.0",
+        "web3-utils": "^4.3.0"
+    }
 }
