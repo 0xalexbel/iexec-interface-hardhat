@@ -16,7 +16,7 @@
         "url": "git+https://github.com/0xalexbel/iexec-interface-hardhat.git"
     },
     "keywords": [],
-    "author": "",
+    "author": "iExec",
     "license": "Apache-2.0",
     "homepage": "https://github.com/0xalexbel/iexec-interface-hardhat.git#readme",
     "devDependencies": {
