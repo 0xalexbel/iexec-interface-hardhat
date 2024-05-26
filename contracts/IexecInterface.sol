@@ -1,6 +1,5 @@
 // SPDX-License-Identifier: Apache-2.0
-
-pragma solidity >0.5.0 <0.9.0;
+pragma solidity >0.5.0 <0.7.0;
 pragma experimental ABIEncoderV2;
 
 import "./IexecHub.sol";
@@ -21,6 +20,7 @@ contract IexecInterface
 	IexecClerkInterface public iexecClerk;
 
 	constructor(address _iexecHubAddr)
+	public
 	{
 		if      (_isContract(_iexecHubAddr      )) { iexecHub = IexecHubInterface(_iexecHubAddr      ); }
 		else if (_isContract(IEXEC_HUB_MAINNET  )) { iexecHub = IexecHubInterface(IEXEC_HUB_MAINNET  ); }
